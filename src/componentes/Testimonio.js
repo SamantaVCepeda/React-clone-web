@@ -7,8 +7,8 @@ function Testimonio(props){
       <img className= 'imagen-testimonio' src= { require(`../imagenes/${props.imagen}.png`)}
         alt= 'foto Shawn'/>
       <div className='contenedor-texto-testimonio'>
-        <p className='nombre-testimonio'>{props.nombre} en {props.pais}</p>
-        <p className='cargo-testimonio'>{props.cargo} en {props.empresa}</p>
+        <p className='nombre-testimonio'><strong>{props.nombre}</strong> en {props.pais}</p>
+        <p className='cargo-testimonio'>{props.cargo} en <strong>{props.empresa}</strong></p>
         <p className='texto-testimonio'>"{props.testimonio}"</p>
       </div>
     </div>
